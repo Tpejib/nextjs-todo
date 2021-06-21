@@ -9,11 +9,13 @@ export function MainLayout({children, title = 'NextJS App', description = 'NextJ
                 <meta name="title" content={`${title} | NextJS App`} />
                 <meta name="description" content={description} />
                 <meta name="keywords" content={keywords} />
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"></link>
             </Head>
             <nav>
                 <Link href={'/'}><a>Home</a></Link>
                 <Link href={'/about'}><a>About</a></Link>
                 <Link href={'/posts'}><a>Posts</a></Link>
+                <Link href={'/todo'}><a>ToDo</a></Link>
             </nav>
             <main>
                 {children}
@@ -33,6 +35,7 @@ export function MainLayout({children, title = 'NextJS App', description = 'NextJ
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        z-index: 5;
                     }
                     nav a {
                         color: black;

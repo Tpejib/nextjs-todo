@@ -1,0 +1,4 @@
+export const CREATE_TASK = "TODO/CREATE_TASK"
+export const FETCH_TASK = "TODO/FETCH_TASK"
+export const UPLOAD_TASK = "TODO/UPLOAD_TASK"
+export const DEL_LOCAL_TASK = "TODO/DEL_LOCAL_TASK"

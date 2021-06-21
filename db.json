@@ -1,11 +1,149 @@
 {
-    "posts": [
-        {"id": 1, "title": "JS Example Post", "body": "Id values are not mutable. Any id value in the body of your PUT or PATCH request will be ignored. Only a value set in a POST request will be respected, but only if not already taken.A POST, PUT or PATCH request should include a Content-Type: application/json header to use the JSON in the request body. Otherwise it will return a 2XX status code, but without changes being made to the data."},
-        {"id": 2, "title": "JS Example Post 2", "body": "Id values are not mutable. Any id value in the body of your PUT or PATCH request will be ignored. Only a value set in a POST request will be respected, but only if not already taken.A POST, PUT or PATCH request should include a Content-Type: application/json header to use the JSON in the request body. Otherwise it will return a 2XX status code, but without changes being made to the data."},
-        {"id": 3, "title": "JS Example Post 3", "body": "Id values are not mutable. Any id value in the body of your PUT or PATCH request will be ignored. Only a value set in a POST request will be respected, but only if not already taken.A POST, PUT or PATCH request should include a Content-Type: application/json header to use the JSON in the request body. Otherwise it will return a 2XX status code, but without changes being made to the data."},
-        {"id": 4, "title": "JS Example Post 4", "body": "Id values are not mutable. Any id value in the body of your PUT or PATCH request will be ignored. Only a value set in a POST request will be respected, but only if not already taken.A POST, PUT or PATCH request should include a Content-Type: application/json header to use the JSON in the request body. Otherwise it will return a 2XX status code, but without changes being made to the data."}
-    ],
-    "about": {
-        "title": "About Us Page"
+  "posts": [
+    {
+      "id": 1,
+      "title": "JS Example Post",
+      "body": "Id values are not mutable. Any id value in the body of your PUT or PATCH request will be ignored. Only a value set in a POST request will be respected, but only if not already taken.A POST, PUT or PATCH request should include a Content-Type: application/json header to use the JSON in the request body. Otherwise it will return a 2XX status code, but without changes being made to the data."
+    },
+    {
+      "id": 2,
+      "title": "JS Example Post 2",
+      "body": "Id values are not mutable. Any id value in the body of your PUT or PATCH request will be ignored. Only a value set in a POST request will be respected, but only if not already taken.A POST, PUT or PATCH request should include a Content-Type: application/json header to use the JSON in the request body. Otherwise it will return a 2XX status code, but without changes being made to the data."
+    },
+    {
+      "id": 3,
+      "title": "JS Example Post 3",
+      "body": "Id values are not mutable. Any id value in the body of your PUT or PATCH request will be ignored. Only a value set in a POST request will be respected, but only if not already taken.A POST, PUT or PATCH request should include a Content-Type: application/json header to use the JSON in the request body. Otherwise it will return a 2XX status code, but without changes being made to the data."
+    },
+    {
+      "id": 4,
+      "title": "JS Example Post 4",
+      "body": "Id values are not mutable. Any id value in the body of your PUT or PATCH request will be ignored. Only a value set in a POST request will be respected, but only if not already taken.A POST, PUT or PATCH request should include a Content-Type: application/json header to use the JSON in the request body. Otherwise it will return a 2XX status code, but without changes being made to the data."
     }
+  ],
+  "about": {
+    "title": "About Us Page"
+  },
+  "tasks": [
+    {
+      "id": 123,
+      "title": "Ex 1",
+      "body": "Example body",
+      "del": true
+    },
+    {
+      "id": 124,
+      "title": "Ex 2",
+      "body": "Example body",
+      "del": true
+    },
+    {
+      "id": 125,
+      "title": "Ex 3",
+      "body": "Example body",
+      "del": true
+    },
+    {
+      "id": "1623429127113",
+      "title": "Fake task kpsjsbex",
+      "body": "Fake task body",
+      "del": true
+    },
+    {
+      "id": "1623661088552",
+      "title": "Fake task kpwdw208",
+      "body": "Fake task body",
+      "del": true
+    },
+    {
+      "id": "1623661089450",
+      "title": "Fake task kpwdw2p6",
+      "body": "Fake task body",
+      "del": true
+    },
+    {
+      "id": "1623661090136",
+      "title": "Fake task kpwdw388",
+      "body": "Fake task body",
+      "del": true
+    },
+    {
+      "id": "1623661090718",
+      "title": "Fake task kpwdw3oe",
+      "body": "Fake task body",
+      "del": true
+    },
+    {
+      "id": "1623661091681",
+      "title": "Fake task kpwdw4f5",
+      "body": "Fake task body",
+      "del": true
+    },
+    {
+      "id": "1623668816337",
+      "title": "Fake task kpwihosx",
+      "body": "Fake task body",
+      "del": true
+    },
+    {
+      "id": "1623668820642",
+      "title": "Fake task kpwihs4i",
+      "body": "Fake task body",
+      "del": true
+    },
+    {
+      "id": "1623668848247",
+      "title": "Fake task kpwiidfb",
+      "body": "Fake task body",
+      "del": true
+    },
+    {
+      "id": "1623672523742",
+      "title": "Fake task kpwkp5ge",
+      "body": "Fake task body",
+      "del": true
+    },
+    {
+      "id": "1623859929755",
+      "title": "Task title",
+      "body": "Task body text",
+      "del": true
+    },
+    {
+      "id": "1623859986179",
+      "title": "Fake task kpzob4eb",
+      "body": "Fake task body",
+      "del": true
+    },
+    {
+      "id": "1623859986333",
+      "title": "Fake task kpzob4il",
+      "body": "Fake task body",
+      "del": true
+    },
+    {
+      "id": "1623859987164",
+      "title": "Fake task kpzob55o",
+      "body": "Fake task body",
+      "del": true
+    },
+    {
+      "id": "1623860033270",
+      "title": "Task title",
+      "body": "Task body text",
+      "del": true
+    },
+    {
+      "id": "1623860182019",
+      "title": "Fake task kpzofbib",
+      "body": "Fake task body",
+      "del": false
+    },
+    {
+      "id": "1623860182664",
+      "title": "Fake task kpzofc08",
+      "body": "Fake task body",
+      "del": false
+    }
+  ]
 }
