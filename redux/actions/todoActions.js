@@ -6,12 +6,12 @@ export function createTask(task) {
         payload: task
     }
 }
-export function deleteTask(task) {
-    return {
-        type: DEL_LOCAL_TASK,
-        payload: task
-    }
-}
+// export function deleteTask(task) {
+//     return {
+//         type: DEL_LOCAL_TASK,
+//         payload: task
+//     }
+// }
 
 export function fetchTasks() {
     return async dispatch => {

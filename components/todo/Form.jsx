@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { createTask, uploadTask } from "../../redux/actions/todoActions";
+import { postTask, restoreDeletedTasks } from "../../redux/toolkit/tasksAction";
 import { Button } from "./Button";
 
 export default function Form () {
@@ -25,6 +26,7 @@ export default function Form () {
         e.preventDefault()
         if (task.title === '' || task.body === '') return
         dispatch(createTask(task))
+        dispatch(postTask(task))
         setTask({
             title: '',
             body: '',
@@ -32,16 +34,10 @@ export default function Form () {
         })
     }
 
-    const onUpload = () => {
-        const fakeTask = {
-            id: Date.now().toString(),
-            title: 'Fake task ' + Date.now().toString(36),
-            body: 'Fake task body'
-
-        }
-        console.log(fakeTask);
-        dispatch(uploadTask(fakeTask))
+    const restore = () => {
+        dispatch(restoreDeletedTasks())
     }
+
     return(
         <>
             <form onSubmit={onSubmit}>
@@ -84,12 +80,11 @@ export default function Form () {
                 </Button>
             </form>
             <Button
-                onClick={onUpload}
                 className="btn-warning"
+                onClick={restore}
             >
-                Upload Task to DB
+                Restore Last Deleted Tasks
             </Button>
-
             {/* {JSON.stringify(task, null, 2)} */}
         </>
     )

@@ -1,10 +1,13 @@
 import { useDispatch } from "react-redux"
-import { deleteDbTask, deleteTask, fetchTasks, uploadTask } from "../../redux/actions/todoActions";
+import { deleteTask } from "../../redux/toolkit/tasksAction";
+// import { deleteDbTask, fetchTasks, uploadTask } from "../../redux/actions/todoActions";
 import { Button } from "./Button";
 import { Card } from "./Card";
+// import { deleteTask } from '../redux/toolkit/toolkitSlice'
 
 
 export default function Task({title, body, id, isLocal}) {
+
 
     const dispatch = useDispatch()
 
@@ -14,12 +17,9 @@ export default function Task({title, body, id, isLocal}) {
         body
     }
 
-    const onClick = () => {
-        dispatch(uploadTask(task))
-    }
-
-    const delTask = () => {
-        isLocal ? dispatch(deleteTask(task)) : dispatch(deleteDbTask(task))
+    const deleteButton = () => {
+        console.log('123');
+        dispatch(deleteTask(task))
     }
    
     return (
@@ -28,18 +28,18 @@ export default function Task({title, body, id, isLocal}) {
             title={title}
             body={body}
         >
-            {isLocal && 
+            {/* {isLocal && 
                 <Button
                     className="btn-success"
-                    onClick={onClick}
+                    // onClick={onClick}
                 >
                     Upload
                 </Button>
-            }
+            } */}
             <Button
                 className="btn-danger"
-                onClick={delTask}
-            >
+                onClick={deleteButton}
+                >
                 Del
             </Button>
         </Card>

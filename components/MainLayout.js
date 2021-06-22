@@ -17,7 +17,7 @@ export function MainLayout({children, title = 'NextJS App', description = 'NextJ
                 <Link href={'/posts'}><a>Posts</a></Link>
                 <Link href={'/todo'}><a>ToDo</a></Link>
             </nav>
-            <main>
+            <main className="container">
                 {children}
             </main>
             <footer>
