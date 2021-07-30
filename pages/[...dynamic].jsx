@@ -1,14 +1,38 @@
 import { serialize } from 'next-mdx-remote/serialize'
 import Article from "../components/article";
 import Category from '../components/category';
+import JsxParser from 'react-jsx-parser';
 import { MainLayout } from "../components/MainLayout"
+import Link from 'next/link';
+import Image from 'next/image';
+
+const CustomHeading = ({children}) => {
+    return (<h1 style={{color: 'red'}}>{children}</h1>)
+}
 
 
 export default function Dynamic({isArticle,isCategory, pageContent}) {
+    const components = {
+        Image,
+        Link,
+        CustomHeading
+    }
     return (
         <>
         {isArticle && <Article content={pageContent} />}
         {isCategory && <Category content={pageContent} />}
+        {isArticle && (
+            <>
+                <JsxParser
+                    components={components}
+                    jsx={`
+                        <h1>TEST JSX PARSER</h1>
+                        <p>TEST JSX PARSER PARAGRAPH</p>
+                        <CustomHeading>1232</CustomHeading>
+                    `}
+                />
+            </>
+        )}
         </>
     )
 }
