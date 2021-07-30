@@ -1,4 +1,14 @@
 {
+  "pageType": [
+    {
+      "id": "article-1",
+      "type": "article"
+    },
+    {
+      "id": "category-1",
+      "type": "category"
+    }
+  ],
   "posts": [
     {
       "id": 1,
@@ -19,6 +29,28 @@
       "id": 4,
       "title": "JS Example Post 4",
       "body": "Id values are not mutable. Any id value in the body of your PUT or PATCH request will be ignored. Only a value set in a POST request will be respected, but only if not already taken.A POST, PUT or PATCH request should include a Content-Type: application/json header to use the JSON in the request body. Otherwise it will return a 2XX status code, but without changes being made to the data."
+    },
+    {
+      "id": 5,
+      "title": "JSX Example Post 5",
+      "body": "<Heading>123231123</Heading> Some <strong>mdx</strong> text,<br/> <span>with</span> a component. <link href={'/'}><a href='/'>Go to HOMEPAGE</a></link>"
+    },
+    {
+      "id": 6,
+      "title": "JSX Example Post 6",
+      "body": "<Heading>What Is a Rhetorical Analysis?</Heading><p>Let's begin with a rhetorical analysis essay definition. It is crucial to understand the differences between various types of papers. As for rhetorical analysis – it is an essay that focuses on the publication author's main ideas. In contrast to literary analysis, we should be less concerned with what they say and notice how they sound instead.</p><p>While reading a suggested or assigned piece, students should keep an eye on:</p><ol><li>What goals did the author pursue by writing their work?</li><li>What rhetorical devices did they use?</li><li>How do they appeal to the reader?</li></ol><Image src={'/vercel.svg'} width={283} height={64} /><Link href={'/'}><a>Home page link</a></Link><div class='123'>123</div>"
+    }
+  ],
+  "articles": [
+    {
+      "id": "article-1",
+      "body": "<h1>What Is a Rhetorical Analysis?</h1><p>Let's begin with a rhetorical analysis essay definition. It is crucial to understand the differences between various types of papers. As for rhetorical analysis – it is an essay that focuses on the publication author's main ideas. In contrast to literary analysis, we should be less concerned with what they say and notice how they sound instead.</p><p>While reading a suggested or assigned piece, students should keep an eye on:</p><ol><li>What goals did the author pursue by writing their work?</li><li>What rhetorical devices did they use?</li><li>How do they appeal to the reader?</li></ol><Image src={'/vercel.svg'} width={283} height={64} /><a href='/'>Home page link</a><div className='123'>123</div><a href='https://google.com'>external link</a><h2>Rhetorical Appeals</h2><p>Writing a rhetorical analysis essay requires you to understand and distinguish rhetorical appeals. These persuasive techniques are used to convince readers and get their approval by calling to emotions, experience, and other characteristics of human nature. There are three main kinds of appeals: ethos, pathos, and logos. In his book \"Rhetoric,\" Aristotle brought these concepts to life. Now, these rhetorical techniques are excellent strategies that authors use to persuade their audience.But what exactly do these terms mean? Let's make it clear:</p><h2>How to Write a Rhetorical Analysis Essay?</h2><p>convince readers and get their approval by calling to emotions, experience, and other characteristics of human nature. There are three main kinds of appeals: ethos, pathos, and logos. In his book \"Rhetoric,\" Aristotle brought thes</p><h2>Rhetorical Analysis Essay Introduction</h2><p>orical analysis essay requires you to understand and distinguish rhetorical appeals. These persuasive techniques are used to convince readers and get their approval by calling to emotions, experience, and other characteristics of human nature. There are three main kinds of appeals: ethos, pathos, and logos. In his book \"Rhetoric,\" Aristotle brought these concepts to life. Now,</p>"
+    }
+  ],
+  "categories": [
+    {
+      "id": "category-1",
+      "body": "category 1 - Content"
     }
   ],
   "about": {
